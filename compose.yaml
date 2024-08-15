@@ -14,7 +14,7 @@ services:
     environment:
       - PASSWORD_FILE_PATH=/run/secrets/db-password
       - DB_HOST=db
-      - DB_NAME=nurse_inter67
+      - DB_NAME=nurse inter
       - DB_USER=root
     develop:
       watch:
@@ -31,7 +31,7 @@ services:
       - db-data:/var/lib/mysql
     environment:
       - MARIADB_ROOT_PASSWORD_FILE=/run/secrets/db-password
-      - MARIADB_DATABASE=nurse_inter67
+      - MARIADB_DATABASE=nurse inter
     expose:
       - 3306
     healthcheck:
